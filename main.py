@@ -24,7 +24,7 @@ def chat():
             return jsonify({"error": "Message is empty"}), 400
 
         completion = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="llama-3.1-8b-instant",
             messages=[
                 {
                     "role": "system",
@@ -51,4 +51,4 @@ def chat():
         return jsonify({"answer": "I am having trouble hearing you clearly right now. Please try again."}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=True)
