@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+
+*.db
+*.onnx
+*.onnx.data
+
+
+bible_pt.json
+
+vocab.txt
+
+.env
